@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(216, 209, 209);
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#welcome {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+#tableContainer {
+    background-color: white;
+    align-items: center;
+    
+}
+
+#tableRow1 {
+	display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#tableRow2 {
+	display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#tableRow3 {
+	display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.tables {
+    border: none;
+    border-radius: 100%;
+    background-color: gray;
+    width: 60px;
+    height: 60px;
+}
