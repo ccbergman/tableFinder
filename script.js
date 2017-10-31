@@ -2,8 +2,14 @@ $(document).ready(function () {
     console.log("Hi");
 
     $(".table").on("click", function () {
-        console.log("test");
+        $("#reserveForm").css("display", "block");
     });
 
 
+    $(".exitIcon").on("click", function () {
+        $("#reserveForm").css("display", "none");
+    });
+
+
+    
 });

@@ -20,14 +20,14 @@ h1 {
 #tableContainer {
     background-color: white;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     margin: auto;
 }
 
 #tableRow1, #tableRow2, #tableRow3 {
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 10px 10px 10px;
 }
 
@@ -35,8 +35,8 @@ h1 {
     border: none;
     border-radius: 100%;
     background-color: #EEE;
-    width: 40px;
-    height: 40px;
+    width: 20%;
+    padding: 8%;
     color: rgb(179, 178, 178);
     font-family: 'Roboto', monospace;
 }
@@ -46,14 +46,15 @@ h1 {
 }
 
 #reserveForm {
-    display:none;
-    flex-direction: column;
+    /* display:none; */
     background-color: white;
-    padding-left: 40px;
+    padding-left: 10%;
+    margin-left: 18%;
     z-index: 2;
-    width: 250px;
-    height: 250px;
+    width: 56%;
+    margin-top: -32%;
     padding-top: 2px; 
+    position: absolute;
     box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
 }
 
@@ -63,6 +64,7 @@ h1 {
 }
 
 h3 {
+    margin-top: 6px;
     color: #b33232;
     font-family: 'Rubik', sans-serif; 
 }
@@ -71,10 +73,10 @@ input {
     display: block;
     border: none;
     border-bottom: solid;
-    width: 200px;
+    width: 80%;
     border-color:#EEE;
     border-width: 1px;
-    margin-top: 20px;
+    margin-top: 10%;
     font-family: 'Roboto', monospace;
 }
 
@@ -83,106 +85,21 @@ input {
     background-color: #008000;
     font-family: 'Roboto', monospace;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     height: 30px;
     color: white;
     box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
 }
 
-@media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    #welcome p {
-        padding-bottom: 40px;
-        font-size: 20px;
-    }
-
-    .available {
-        width: 80px;
-        height: 80px;
-        font-size: 20px;
-    }
-
-    #tableContainer {
-        width: 325px;
-        height: 325px;
-    }
-
-    #reserveForm {
-        padding-left: 40px;
-        width: 350px;
-        height: 350px;
-        padding-top: 15px; 
-    }
-    
-    #tableNumber {
-        font-size: 15px;
-    }
-    
-    h3 {
-        font-size: 20px;
-    }
-    
-    input {
-        width: 250px;
-        margin-top: 40px;
-        font-size: 15px;
-    }
-    
-    #saveReservation {
-        width: 80%;
-        margin-top: 30px;
-        height: 30px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    h1 {
-        font-size: 45px;
-    }
-
-    #welcome p {
-        padding-bottom: 40px;
-        font-size: 20px;
-    }
-
-    #tableRow1, #tableRow2, #tableRow3 {
-        padding: 22px 20px 20px 20px;
-    }
-
-    .available {
-        width: 90px;
-        height: 90px;
-        font-size: 25px;
-    }
-
-    #tableContainer {
-        width: 400px;
-        height: 400px;
-    }
-
-    #reserveForm {
-        padding-left: 60px;
-        width: 400px;
-        height: 400px;
-        padding-top: 20px; 
-    }
-    
-    h3 {
-        font-size: 25px;
-    }
-    
-    input {
-        width: 325px;
-        margin-top: 45px;
-        font-size: 15px;
-    }
-    
-    #saveReservation {
-        width: 80%;
-        margin-top: 35px;
-        height: 35px;
-    }
+.exitIcon {
+    font-family: 'Roboto', monospace;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    color: gray;
+    width: 93%;
+    padding-top: 10px;
+    border: none;
+    background-color: white;
 }
