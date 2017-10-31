@@ -31,7 +31,7 @@ h1 {
     padding: 15px 10px 10px 10px;
 }
 
-.available {
+.table {
     border: none;
     border-radius: 100%;
     background-color: #EEE;
@@ -41,8 +41,8 @@ h1 {
     font-family: 'Roboto', monospace;
 }
 
-.available:hover {
-	background-color: gray;
+.table:hover {
+	background-color: rgb(243, 184, 159);
 }
 
 #reserveForm {
