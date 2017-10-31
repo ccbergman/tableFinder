@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $(".table").on("click", function () {
         if ($(this).hasClass("available")) {
-            $("#reserveForm").css("display", "block");
+            $("#reserveForm").slideDown().css("display", "block");
             tableIsReserved = $(this);
         }
     });
