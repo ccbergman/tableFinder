@@ -46,7 +46,7 @@ h1 {
 }
 
 #reserveForm {
-    /* display:none; */
+    display:none;
     background-color: white;
     padding-left: 10%;
     margin-left: 18%;
