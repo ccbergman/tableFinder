@@ -54,7 +54,6 @@ $(document).ready(function () {
         $("#hoverData").fadeOut();
     });
 
-
     $(".exitIcon").on("click", function () {
         $("#reserveForm").fadeOut("slow");
     });
