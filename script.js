@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#saveReservation").on("click", function () {
         if ($(".table.available")) {
             $(tableIsReserved).removeClass('available').addClass('reserved');
-            $(tableIsReserved).css("cursor", "not-allowed");
+            // $(tableIsReserved).css("cursor", "not-allowed");
             $(tableIsReserved).css("color", "#EEE");
             $(tableIsReserved).css("background-color", "#ADAAAA");
 
@@ -35,6 +35,24 @@ $(document).ready(function () {
             $("#reserveForm").fadeOut("slow");
         }
     });
+
+    $("button").mouseover(function () {
+        if ($(this).hasClass("reserved")) {
+            var tableNum = $(this).attr("data-tablenum");
+            var hoverName = tableData[tableNum].name;
+            var hoverCount = tableData[tableNum].count;
+            $(this).mousemove(function (e) {
+                $("#hoverGuestName").text("Guest Name: " + hoverName);
+                $("#hoverPartySize").text("Size of Party: " + hoverCount);
+                $("#hoverData").show().css('top', e.pageY).css('left', e.pageX);
+            });
+        }
+    });
+
+    $("button").mouseout(function () {
+        $("#hoverData").fadeOut();
+    });
+
 
     $(".exitIcon").on("click", function () {
         $("#reserveForm").fadeOut("slow");

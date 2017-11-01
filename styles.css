@@ -41,9 +41,9 @@ h1 {
     font-family: 'Roboto', monospace;
 }
 
-.table:hover {
+/* .table:hover {
 	background-color: rgb(243, 184, 159);
-}
+} */
 
 #reserveForm {
     display:none;
@@ -102,4 +102,14 @@ input {
     padding-top: 10px;
     border: none;
     background-color: white;
+}
+
+#hoverData {
+    display: none;
+    font-family: 'Roboto', monospace;
+    font-size: 13px;
+    position: absolute;
+    background-color: lightgray;
+    border: 2px solid gray;
+    border-radius: 6px;
 }
