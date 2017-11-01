@@ -13,6 +13,7 @@ $(document).ready(function () {
             $("#reserveForm").slideDown("slow").css("display", "block");
             $("#guestName").val("");
             $("#guestPartySize").val("");
+            $("#guestNumber").val("");
             tableIsReserved = $(this);
             var tablenum = $(this).attr("data-tablenum");
             $("#tableNumber").text("Table: " + tablenum);
@@ -22,7 +23,7 @@ $(document).ready(function () {
     $("#saveReservation").on("click", function () {
         if ($(".table.available")) {
             $(tableIsReserved).removeClass('available').addClass('reserved');
-            // $(tableIsReserved).css("cursor", "not-allowed");
+            $(tableIsReserved).css("cursor", "none");
             $(tableIsReserved).css("color", "#EEE");
             $(tableIsReserved).css("background-color", "#ADAAAA");
 
